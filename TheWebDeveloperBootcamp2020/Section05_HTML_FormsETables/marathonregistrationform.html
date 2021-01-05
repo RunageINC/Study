@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Race Registration Form</title>
+
+	<style type="text/css">
+		h1, button {
+			margin: 10px;
+		}
+		input[type="text"], input[type="password"], input[type="email"] {
+			margin: 5px 0 10px 0;
+		}
+		section {
+			margin: 10px;
+			border: 1px solid black;
+			border-radius: 10px;
+			width: 225px;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Race Registration!</h1>
+	<form action="registrationcard.html">
+		<section class="personal_info">
+			<label for="first_name">First Name: </label>
+			<br>
+			<input type="text" name="first_name" id="first_name" required>
+			<br>
+			<label for="last_name">Last Name: </label>
+			<br>
+			<input type="text" name="last_name" id="last_name" required>
+		</section>
+		<section class="race_info">
+			<p>Select a Race: </p>
+			<input type="radio" value="5k" name="race" id="5k"> 
+			<label for="5k">Fun Run 5k</label>
+			<br>
+			<input type="radio" value="half_marathon" name="race" id="half_marathon">
+			<label for="half_marathon">Half Marathon</label>
+			<br>
+			<input type="radio" value="full_marathon" name="race" id="full_marathon">
+			<label for="full_marathon">Full Marathon</label>
+		</section>
+		<section class="contact_info">
+			<label for="email">Email: </label>
+			<br>
+			<input type="email" name="email" id="email" required>
+			<br>
+			<label for="password">Password: </label>
+			<br>
+			<input type="password" name="password" id="password" required>
+		</section>
+		<section class="category">
+			<label for="age_group">Select Age Group</label>
+			<br>
+			<select name="age_group" id="age_group">
+				<option value="kids">Under 18</option>
+				<option value="young-adults">18-30</option>
+				<option value="adults">30-50</option>
+				<option value="seniors">50+</option>
+			</select>
+		</section>
+		<button type="submit">Register!</button>
+	</form>
+</body>
+</html>
