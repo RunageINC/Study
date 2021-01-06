@@ -1,0 +1,7 @@
+There are some properties when using the display attribute:
+
+inline - width & height are ignored. Margin & padding push elements away horizontally but not vertically
+
+block - block elements break the flow of a document. Width, height, margin & padding are respected.
+
+inline-block - 
