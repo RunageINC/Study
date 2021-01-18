@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Position Property</title>
+	<style type="text/css">
+		div {
+			width: 100px;
+			height: 100px;
+			background-color: #3d405b;
+			border: 2px solid black;
+			margin: 10px;
+			display: inline-block;
+		}
+
+		.middle {
+			background-color: #81b29a;
+			color: white;
+			text-align: center;
+		}
+
+		.static .middle {
+			position: static;
+			top: 100px;
+		}
+
+		.relative .middle {
+			position: relative;
+			top: 50px;
+			left: 50px;
+		}
+
+		.absolute .middle {
+			position: absolute;
+			top: 50px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Position Property</h1>
+
+	<section class="static">
+		<h2>Static</h2>
+		<div></div>
+		<div class="middle">top: 100px</div>
+		<div></div>
+	</section>
+	<section class="relative">
+		<h2>Relative</h2>
+		<div></div>
+		<div class="middle">top: 50px <br> left: 50px</div>
+		<div></div>
+	</section>
+	<section class="absolute">
+		<h2>Absolute</h2>
+		<div></div>
+		<div class="middle">top: 50px</div>
+		<div></div>
+	</section>
+</body>
+</html>
